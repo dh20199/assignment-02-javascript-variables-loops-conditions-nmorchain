@@ -301,6 +301,7 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   var exports = module.exports = {};
 }
 else {
+  // eslint-disable-next-line no-redeclare
   var exports = window.skeleton = {};
 }
 
