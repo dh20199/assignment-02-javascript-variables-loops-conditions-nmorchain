@@ -118,17 +118,20 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  if first ==== Number {
-    if second === Number
-    then x = first - second
+  let x = 0; 
+  if (typeof(first) + typeof(second) === 'numbernumber') {
+    x = first - second; 
+  } else {
+    x = 'I can only subtract numbers.';
   }
-else x = 'I can only substract numbers.' 
-return x;
+ return x;
+}
+
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
 
-}
+
 
 
 
@@ -146,6 +149,24 @@ return x;
 function typeTester (unknown) {
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
+
+  if (typeof(unknown) === 'string')
+  {
+    return unknown + ' yay!';
+  }
+  else if (typeof(unknown) === 'number')
+  {
+    return unknown * unknown;
+  }
+  else if (typeof(unknown) === 'undefined')
+  {
+    return unknown + 'sorry, I can\'t do anything with a null value.';
+  }
+  else 
+  {
+    return 'I don\'t know how to use that kind of variable.';
+  }
+    
 }
 
 
