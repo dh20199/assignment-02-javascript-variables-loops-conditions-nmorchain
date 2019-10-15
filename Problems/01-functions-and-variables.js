@@ -88,7 +88,7 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
-  let x = thisArray[0] + ' ' + thisArray[1] + ' was a ' + thisArray[2] + '.'
+  let x = thisArray[0] + ' ' + thisArray[1] + ' was a ' + thisArray[2] + '.';
   return x;
   // remember you can access individual elements of an array with
   // array[0]
@@ -124,12 +124,12 @@ function carefulSubtract (first, second) {
   } else {
     x = 'I can only subtract numbers.';
   }
- return x;
+  return x;
 }
 
-  // test to be sure that both first and second are numbers.
-  // if so, return the result. Otherwise, return the string
-  // "I can only subtract numbers."
+// test to be sure that both first and second are numbers.
+// if so, return the result. Otherwise, return the string
+// "I can only subtract numbers."
 
 
 

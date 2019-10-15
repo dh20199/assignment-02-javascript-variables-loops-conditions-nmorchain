@@ -26,6 +26,11 @@ function returnObject (first, last, prof) {
   // o.firstName = first
   // etc.
   // don't forget to return the object
+  var o = {};
+  o.firstName = first;
+  o.lastName = last;
+  o.profession = prof;
+  return o;
 }
 
 
@@ -62,8 +67,12 @@ function objectToSentence (obj) {
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return 'RETURNVALUE';
-}
+  obj = {
+    firstName: obj.firstName,
+    lastName: obj.lastName,
+    profession: obj.profession,};
+  return obj.firstName + ' ' + obj.lastName + ' was a ' + obj.profession + '.';
+} 
 
 
 // Problem 3
@@ -98,6 +107,19 @@ function wasWriter (obj) {
   // "return" statement inside the conditional braces
   // so you can, e.g.,
   // if (...) {return A} else {return B}
+  obj = {
+    firstName: obj.firstName,
+    lastName: obj.lastName,
+    profession: obj.profession,
+  };
+  
+  if (obj.profession === 'novelist')
+  {
+    return obj.firstName + ' ' + obj.lastName + ' was a writer.';
+  }
+  else { 
+    return obj.firstName + ' ' + obj.lastName + ' was not a writer.';
+  }
 }
 
 
@@ -118,6 +140,7 @@ function wasWriter (obj) {
 function stringIterator (aString, aNumber) {
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
+  for (var i = 0; i< aString)
 }
 
 
