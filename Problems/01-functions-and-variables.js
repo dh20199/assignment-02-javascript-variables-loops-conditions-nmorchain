@@ -160,7 +160,7 @@ function typeTester (unknown) {
   }
   else if (typeof(unknown) === 'undefined')
   {
-    return unknown + 'Sorry, I can\'t do anything with a undefined value.';
+    return 'Sorry, I can\'t do anything with an undefined value.';
   }
   else 
   {

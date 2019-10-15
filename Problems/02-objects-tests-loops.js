@@ -287,7 +287,7 @@ function sentences(list) {
   var i; 
   for (i = 0; i <list.length; i++) {
     let y = list[i].to - list[i].from;
-    x += list[i].fullName + '\'s regin was ' + y + ' years long.' + '\n';
+    x += list[i].fullName + '\'s reign was ' + y + ' years long.' + '\n';
   }
   return x;  
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
