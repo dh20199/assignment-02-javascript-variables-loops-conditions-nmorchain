@@ -283,18 +283,17 @@ function computeReign (pm) {
  *  the properties of the individual objects comprising `list`
  */
 function sentences(list) {
+  let x = '';
+  var i; 
+  for (i = 0; i <list.length; i++) {
+    let y = list[i].to - list[i].from;
+    x += list[i].fullName + '\'s regin was ' + y + ' years long.' + '\n';
+  }
+  return x;  
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
   // the internal components of the objects.
-  let x = '';
-  var i; 
-  for (i = 0; i <list.length; i++) 
-  {
-    let y = list[i].to - list[i].from;
-    x += list[i].fullName + '\'s regin was ' + y + ' years long.' + '\n';
-  }
-  return x;
 }
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
